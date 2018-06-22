@@ -8,7 +8,7 @@ bezop-netstats - the monitoring site which lists the nodes.
 bezop-net-intelligence-api - these are processes that communicate with the bezop client using RPC and push the data to the monitoring site via websockets.
 #Monitoring site Clone the repo and install dependencies:
 
-git clone https://github.com/bezop/bezop-netstats
+git clone https://github.com/bezopteam/bezop-netstats
 cd bezop-netstats
 npm install
 Then choose a secret and start the app:
@@ -23,7 +23,7 @@ PORT=<chosen_port> WS_SECRET=<chosen_secret> npm start
 
 Clone the repo, install dependencies and make sure you have pm2 installed:
 
-git clone https://github.com/cubedro/bezop-net-intelligence-api
+git clone https://github.com/bezopteam/bezop-net-intelligence-api
 cd bezop-net-intelligence-api
 npm install
 sudo npm install -g pm2
