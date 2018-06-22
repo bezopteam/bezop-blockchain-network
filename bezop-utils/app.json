@@ -1,0 +1,40 @@
+[
+  {
+    "name"        : "mynode-0",
+    "cwd"         : ".",
+    "script"      : "app.js",
+    "log_date_format"   : "YYYY-MM-DD HH:mm Z",
+    "merge_logs"    : false,
+    "watch"       : false,
+    "exec_interpreter"  : "node",
+    "exec_mode"     : "fork_mode",
+    "env":
+    {
+      "NODE_ENV"    : "production",
+      "RPC_HOST"    : "localhost",
+      "RPC_PORT"    : "8507",
+      "INSTANCE_NAME"   : "node-0",
+      "WS_SERVER"     : "http://localhost:3007",
+      "WS_SECRET"     : "big-secret",
+    }
+  },
+  {
+    "name"        : "node-1",
+    "cwd"         : ".",
+    "script"      : "app.js",
+    "log_date_format"   : "YYYY-MM-DD HH:mm Z",
+    "merge_logs"    : false,
+    "watch"       : false,
+    "exec_interpreter"  : "node",
+    "exec_mode"     : "fork_mode",
+    "env":
+    {
+      "NODE_ENV"    : "production",
+      "RPC_HOST"    : "localhost",
+      "RPC_PORT"    : "8508",
+      "INSTANCE_NAME"   : "mynode-1",
+      "WS_SERVER"     : "http://localhost:3007",
+      "WS_SECRET"     : "big-secret",
+    }
+  },
+]
